@@ -11,3 +11,6 @@ C:\Users\agran\Desktop\Nelysis-Exam-Solution\NetworkManagementSystem\NetworkMana
 C:\Users\agran\Desktop\Nelysis-Exam-Solution\NetworkManagementSystem\NetworkManagementSystem\obj\Debug\NetworkManagementSystem.csproj.CopyComplete
 C:\Users\agran\Desktop\Nelysis-Exam-Solution\NetworkManagementSystem\NetworkManagementSystem\obj\Debug\NetworkManagementSystem.exe
 C:\Users\agran\Desktop\Nelysis-Exam-Solution\NetworkManagementSystem\NetworkManagementSystem\obj\Debug\NetworkManagementSystem.pdb
+C:\Users\agran\Desktop\Nelysis-Exam-Solution\NetworkManagementSystem\NetworkManagementSystem\obj\Debug\NetworkManagementSystem.Migrations.AddedCustomizedSeed.resources
+C:\Users\agran\Desktop\Nelysis-Exam-Solution\NetworkManagementSystem\NetworkManagementSystem\obj\Debug\NetworkManagementSystem.csproj.GenerateResource.cache
+C:\Users\agran\Desktop\Nelysis-Exam-Solution\NetworkManagementSystem\NetworkManagementSystem\obj\Debug\NetworkManagementSystem.Migrations.Initial.resources

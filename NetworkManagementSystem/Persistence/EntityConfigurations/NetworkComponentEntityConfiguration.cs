@@ -22,8 +22,6 @@ namespace NetworkManagementSystem.Persistence.EntityConfigurations
                 .IsRequired()
                 .HasMaxLength(60);
 
-            HasRequired(n => n.ComponentType);
-
             Property(n => n.HostName)
                 .IsRequired()
                 .HasMaxLength(60);
@@ -34,9 +32,6 @@ namespace NetworkManagementSystem.Persistence.EntityConfigurations
 
             HasMany(n => n.Networks)
                 .WithMany(n => n.Components);
-
-            HasMany(n => n.ConnectedComponents)
-                .WithMany(c => c.ConnectedComponents);
 
             Property(n => n.TotalDayThroughput)
                 .IsOptional();

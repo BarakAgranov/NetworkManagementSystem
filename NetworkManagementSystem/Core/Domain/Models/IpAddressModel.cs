@@ -14,5 +14,20 @@ namespace NetworkManagementSystem.Core.Domain
         public string Address { get; set; }
         public IpAddressType AddressType { get; set; }
         public IpVersion Version { get; set; }
+
+
+        public IpAddressModel(int id, string address, IpAddressType addressType, IpVersion version)
+        {
+            Id = id;
+            Address = address;
+            AddressType = addressType;
+            Version = version;
+        }
+
+        public IpAddressModel()
+        {
+            
+        }
     }
+
 }

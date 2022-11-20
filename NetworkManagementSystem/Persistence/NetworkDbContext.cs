@@ -18,10 +18,10 @@ namespace NetworkManagementSystem.Persistence
             this.Configuration.LazyLoadingEnabled = false;
         }
 
-        public virtual DbSet<NetworkModel> NetworkModels { get; set; }
-        public virtual DbSet<NetworkComponentModel> NetworkComponentsModels { get; set; }
-        public virtual DbSet<ComponentTypeModel> ComponentTypeModels { get; set; }
-        public virtual DbSet<IpAddressModel> IpAddressModels { get; set; }
+        public virtual DbSet<NetworkModel> Networks { get; set; }
+        public virtual DbSet<NetworkComponentModel> NetworkComponents { get; set; }
+        public virtual DbSet<ComponentTypeModel> ComponentTypes { get; set; }
+        public virtual DbSet<IpAddressModel> IpAddresses { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

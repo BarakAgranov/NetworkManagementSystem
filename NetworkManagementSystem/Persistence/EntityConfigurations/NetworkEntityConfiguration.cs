@@ -28,9 +28,6 @@ namespace NetworkManagementSystem.Persistence.EntityConfigurations
 
             HasMany(n => n.IpAddresses);
 
-            HasMany(n => n.Subnets)
-                .WithMany(s => s.Subnets);
-
             HasMany(n => n.Components)
                 .WithMany(c => c.Networks);
 

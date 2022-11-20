@@ -65,6 +65,15 @@
     <Compile Include="Core\Repositories\INetworkComponentRepository.cs" />
     <Compile Include="Core\Repositories\INetworkRepository.cs" />
     <Compile Include="Core\Repositories\IRepository.cs" />
+    <Compile Include="Migrations\202211200223374_AddedCustomizedSeed.cs" />
+    <Compile Include="Migrations\202211200223374_AddedCustomizedSeed.designer.cs">
+      <DependentUpon>202211200223374_AddedCustomizedSeed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211200233231_Initial.cs" />
+    <Compile Include="Migrations\202211200233231_Initial.designer.cs">
+      <DependentUpon>202211200233231_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistence\EntityConfigurations\ComponentTypeEntityConfiguration.cs" />
     <Compile Include="Persistence\EntityConfigurations\IpAddressEntityConfiguration.cs" />
     <Compile Include="Persistence\EntityConfigurations\NetworkComponentEntityConfiguration.cs" />
@@ -83,7 +92,19 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="components_types.txt" />
+    <Content Include="networks.txt" />
+    <Content Include="network_components.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202211200223374_AddedCustomizedSeed.resx">
+      <DependentUpon>202211200223374_AddedCustomizedSeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211200233231_Initial.resx">
+      <DependentUpon>202211200233231_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

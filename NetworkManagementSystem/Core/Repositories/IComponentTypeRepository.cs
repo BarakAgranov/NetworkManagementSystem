@@ -9,5 +9,8 @@ namespace NetworkManagementSystem.Core.Repositories
 {
     public interface IComponentTypeRepository : IRepository<ComponentTypeModel>
     {
+        ComponentTypeModel GetComponentType(int id);
+        IQueryable<ComponentTypeModel> GetAllComponentTypesQueryable();
+
     }
 }

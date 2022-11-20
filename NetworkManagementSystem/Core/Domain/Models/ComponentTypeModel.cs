@@ -10,5 +10,16 @@ namespace NetworkManagementSystem.Core.Domain
     {
         public int Id { get; set; }
         public string TypeName { get; set; }
+
+        public ComponentTypeModel(int id, string typeName)
+        {
+            Id = id;
+            TypeName = typeName;
+        }
+
+        public ComponentTypeModel()
+        {
+            
+        }
     }
 }

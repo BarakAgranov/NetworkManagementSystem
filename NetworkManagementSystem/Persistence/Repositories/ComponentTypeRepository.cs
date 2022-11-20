@@ -14,5 +14,22 @@ namespace NetworkManagementSystem.Persistence.Repositories
         public ComponentTypeRepository(DbContext context) : base(context)
         {
         }
+
+        public IQueryable<ComponentTypeModel> GetAllComponentTypesQueryable()
+        {
+            return NetworkDbContext.ComponentTypes
+                .OrderBy(c => c.Id);
+        }
+
+        public ComponentTypeModel GetComponentType(int id)
+        {
+            return NetworkDbContext.ComponentTypes
+                .SingleOrDefault(t => t.Id == id);
+        }
+
+        public NetworkDbContext NetworkDbContext
+        {
+            get { return Context as NetworkDbContext; }
+        }
     }
 }

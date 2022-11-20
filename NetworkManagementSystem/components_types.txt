@@ -1,0 +1,10 @@
+0|Unclassified
+1|Video Edge Device
+2|Video Management
+3|Storage Monitoring
+4|Router/Switch
+5|Video Client
+6|Unknown PC
+7|Engineering Station
+8|Printer
+9|IP Speakers
